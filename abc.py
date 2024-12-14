@@ -48,6 +48,7 @@ def port_scanner(target, start_port=1, end_port=1024, num_threads=100):
         # Wait for port queue to be empty
         port_queue.join()
 
+        
         # Print results
         print("\nScan completed!")
         print(f"Open ports on {target_ip}:")
